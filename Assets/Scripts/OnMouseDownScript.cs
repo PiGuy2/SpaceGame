@@ -15,6 +15,6 @@ public class OnMouseDownScript : MonoBehaviour {
 	}
 
 	void OnMouseDown () {
-		print("clicked");
+		print("clicked hexagon: " + this.gameObject.name);
 	}
 }
