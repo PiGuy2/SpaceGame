@@ -12,7 +12,7 @@ public class ButtonScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		button = GetComponent<Button>();
-		mat = Resources.Load("Materials/wood.mat") as Material;
+		mat = Resources.Load("Materials/wood") as Material;
 		print("Load");
 		button.image.material = mat;
 	}
