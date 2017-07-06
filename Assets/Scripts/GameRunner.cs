@@ -7,6 +7,15 @@ public class GameRunner : MonoBehaviour {
 	Card[] deck = new Card[50];
 	int drawNum = 0;
 
+	public int[] mat = new int[5];
+	/*
+	public int food = 0;
+	public int wood = 0;
+	public int metal = 0;
+	public int money = 0;
+	public int fuel = 0;
+	*/
+
 	// Use this for initialization
 	void Start () {
 		shuffleDeck();
@@ -58,7 +67,7 @@ public class GameRunner : MonoBehaviour {
 		return deck[drawNum - 1];
 	}
 
-	enum Card : int {
+	public enum Card : int {
 		food = 1,
 		wood = 2,
 		metal = 3,
