@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ButtonScript : MonoBehaviour {
 
-	GameRunner.Card current = (GameRunner.Card)0;
+	public GameRunner.Card current = (GameRunner.Card)0;
 
 	// Use this for initialization
 	void Start () {
