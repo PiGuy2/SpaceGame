@@ -67,7 +67,27 @@ public class GameRunner : MonoBehaviour {
 		return deck[drawNum - 1];
 	}
 
+	public string getCardName (int c) {
+		switch (c) {
+			case 0:
+				return "empty";
+			case 1:
+				return "food";
+			case 2:
+				return "wood";
+			case 3:
+				return "metal";
+			case 4:
+				return "money";
+			case 5:
+				return "fuel";
+			default:
+				return "error";
+		}
+	}
+
 	public enum Card : int {
+		empty = 0,
 		food = 1,
 		wood = 2,
 		metal = 3,
