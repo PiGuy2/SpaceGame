@@ -22,9 +22,6 @@ public class ButtonScript : MonoBehaviour {
 		//
 		handObject = GameObject.Find("HandRunner");
 		handRunner = handObject.GetComponent<HandScript>();
-		//
-		GameRunner.Card ca = (GameRunner.Card)4;
-		print(gameRunner.getCardName((int)ca));
 	}
 	
 	// Update is called once per frame
@@ -36,7 +33,9 @@ public class ButtonScript : MonoBehaviour {
 
 	public void useCard () {
 		gameRunner.mat[((int)current) - 1] += 10;
+		handRunner.hand[num] = GameRunner.Card.empty;
 		current = (GameRunner.Card)0;
+		handRunner.shift();
 		setActive(false);
 	}
 

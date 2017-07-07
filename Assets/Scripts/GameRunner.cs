@@ -26,7 +26,7 @@ public class GameRunner : MonoBehaviour {
 			// print(deck[i]);
 		}
 		for (int i = 0; i < 6; i++) {
-			print("Count 2 " + i.ToString() + ": " + count[i].ToString());
+			// print("Count 2 " + i.ToString() + ": " + count[i].ToString());
 		}
 		draw();
 		// -----
@@ -53,7 +53,7 @@ public class GameRunner : MonoBehaviour {
 			// print(deck[i]);
 		}
 		for (int i = 0; i < 6; i++) {
-			print("Count " + i.ToString() + ": " + count[i].ToString());
+			// print("Count " + i.ToString() + ": " + count[i].ToString());
 		}
 		drawNum = 0;
 	}
